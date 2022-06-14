@@ -30,10 +30,12 @@ module.exports = {
                },
                dark: { main: '#1C1C24', stroke: '#3A3A43', '80%': '#352A65' },
             },
-            dark: {},
+            error: '#EB5757',
          },
          backgroundImage: {
             play: 'linear-gradient(180deg, rgba(141, 141, 141, 0.1) -37.93%, rgba(46, 46, 46, 0.4) 100%)',
+            withdraw:
+               'linear-gradient(180deg, rgba(255, 255, 255, 0) 17.8%, #FFFFFF 56.34%)',
             'banner-gradient':
                'linear-gradient(179.14deg, rgba(32, 18, 63, 0) -7.14%, #000000 87.01%)',
             banner:
@@ -80,6 +82,13 @@ module.exports = {
                   opacity: 0,
                },
             },
+         },
+         screens: {
+            '2xl': { max: '1535px' }, // => @media (max-width: 1535px) { ... }
+            xl: { max: '1279px' }, // => @media (max-width: 1279px) { ... }
+            lg: { max: '1023px' }, // => @media (max-width: 1023px) { ... }
+            md: { max: '767px' }, // => @media (max-width: 767px) { ... }
+            sm: { max: '639px' }, // => @media (max-width: 639px) { ... }
          },
       },
    },

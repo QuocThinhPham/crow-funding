@@ -6,7 +6,7 @@ import { Button } from 'components/Button';
 
 const TopBar = () => {
    return (
-      <div className='flex items-center justify-between px-3'>
+      <div className='md:hidden flex items-center justify-between px-3'>
          <div className='flex items-center gap-x-[53px]'>
             <img src={Logo} alt='Logo' loading='lazy' />
             <div className='relative w-[458px] h-[52px] shadow-light dark:shadow-dark rounded-[100px]'>

@@ -6,9 +6,8 @@
    * {
       box-sizing: border-box;
    }
-
    ::-webkit-scrollbar {
-      @apply w-[5px];
+      @apply w-[5px] h-[5px];
    }
    ::-webkit-scrollbar-thumb {
       @apply rounded-full bg-secondary-light-main;
@@ -16,9 +15,8 @@
    ::-webkit-scrollbar-track {
       @apply bg-letter-4 dark:bg-gray-700;
    }
-
    body {
-      @apply font-primary bg-main-light text-black dark:bg-main-dark dark:text-white min-h-screen scroll-smooth;
+      @apply font-primary bg-main-light text-black dark:bg-main-dark dark:text-white min-h-screen scroll-smooth w-screen overflow-x-hidden;
    }
    input,
    textarea {
@@ -34,4 +32,8 @@
 
 .swiper .swiper-slide {
    @apply max-w-[288px];
+}
+
+.grid-layout {
+   /* @apply; */
 }

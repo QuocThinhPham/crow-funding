@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 const Button = ({ children, to, type, className, ...rest }) => {
-   let buttonClass = `flex items-center justify-center px-[26px] py-[13px] rounded-[10px] font-primary font-semibold text-base leading-6 transition-all`;
+   let buttonClass = `flex items-center justify-center px-[26px] py-[13px] md:py-[9px] rounded-[10px] md:rounded-[5px] font-primary font-semibold text-base leading-6 transition-all`;
 
    if (to)
       return (

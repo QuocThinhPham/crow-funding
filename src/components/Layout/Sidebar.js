@@ -27,7 +27,7 @@ const Sidebar = () => {
       );
    };
    return (
-      <div className='w-full max-w-[76px] h-full py-10 px-[14px] rounded-[20px] bg-white dark:bg-secondary-dark-main shadow-light dark:shadow-dark'>
+      <div className='md:hidden w-full max-w-[76px] h-full py-10 px-[14px] rounded-[20px] bg-white dark:bg-secondary-dark-main shadow-light dark:shadow-dark'>
          <ul className='flex flex-col flex-1 items-center gap-y-[30px]'>
             {renderNavigates()}
             <li
