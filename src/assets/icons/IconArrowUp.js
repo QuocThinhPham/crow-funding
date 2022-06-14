@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IconArrowDown = ({ ...rest }) => {
+const IconArrowUp = ({ ...rest }) => {
    return (
       <svg
          width='24'
@@ -11,7 +11,7 @@ const IconArrowDown = ({ ...rest }) => {
          {...rest}
       >
          <path
-            d='M7 10L12 15L17 10'
+            d='M7 14L12 9L17 14'
             stroke='currentColor'
             strokeWidth='2'
             {...rest}
@@ -20,4 +20,4 @@ const IconArrowDown = ({ ...rest }) => {
    );
 };
 
-export default IconArrowDown;
+export default IconArrowUp;

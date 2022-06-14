@@ -9,7 +9,7 @@ import { ProfileUpdate } from 'module/profile';
 const Profile = () => {
    return (
       <Wrapper>
-         <div className='flex flex-col items-start py-[50px] px-[130px] w-[1097px] max-w-[1097px] mx-auto bg-white dark:bg-secondary-dark-main'>
+         <div className='flex flex-col items-start py-[50px] px-[130px] w-full max-w-[1097px] mx-auto rounded-[10px] bg-white dark:bg-secondary-dark-main'>
             <div className='w-full mb-[55px]'>
                <Heading className='font-bold text-[25px] mb-[5px]'>
                   Account Information

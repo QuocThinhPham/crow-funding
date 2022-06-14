@@ -1,4 +1,4 @@
-const { useEffect, useState } = require('react');
+import { useEffect, useState } from 'react';
 
 export default function useMedia(queries, values, defaultValue) {
    // Array containing a media query list for each query

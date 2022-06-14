@@ -34,6 +34,10 @@ module.exports = {
          },
          backgroundImage: {
             play: 'linear-gradient(180deg, rgba(141, 141, 141, 0.1) -37.93%, rgba(46, 46, 46, 0.4) 100%)',
+            'banner-gradient':
+               'linear-gradient(179.14deg, rgba(32, 18, 63, 0) -7.14%, #000000 87.01%)',
+            banner:
+               'url("./assets/images/photo-1516542076529-1ea3854896f2.png")',
          },
          boxShadow: {
             light: '10px 10px 20px rgba(218, 213, 213, 0.15)',
