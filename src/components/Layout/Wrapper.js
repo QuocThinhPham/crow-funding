@@ -5,7 +5,7 @@ import Main from './Main';
 
 const Wrapper = ({ children }) => {
    return (
-      <div className='w-full h-full p-10 md:p-6 flex flex-col justify-center gap-y-[30px]'>
+      <div className='w-full h-full p-10 md:p-6 flex flex-col justify-center gap-y-[30px] lg:gap-y-5'>
          <TopBar />
          <Main>{children}</Main>
       </div>

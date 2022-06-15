@@ -4,7 +4,7 @@ import { Heading } from 'components/Typography';
 
 const DashboardSection = ({ children, title }) => {
    return (
-      <div>
+      <div className='w-full'>
          <Heading className='text-lg mb-4'>{title}</Heading>
          {children}
       </div>

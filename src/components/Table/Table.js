@@ -52,7 +52,7 @@ const Table = (props) => {
                            <img src={Avatar} alt='Avatar' />
                         </div>
                         <div className='flex flex-col items-start gap-y-[5px]'>
-                           <span className='font-primary font-medium text-xs text-letter-1 dark:text-white leading-6'>
+                           <span className='font-primary font-medium text-xs text-letter-1 dark:text-white leading-normal'>
                               Mahfuzul Nabil
                            </span>
                            <div className='flex items-center gap-x-[3px]'>

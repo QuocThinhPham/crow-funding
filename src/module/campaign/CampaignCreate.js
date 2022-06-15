@@ -42,15 +42,15 @@ const countries = [
 const CampaignCreate = () => {
    return (
       <Wrapper>
-         <div className='flex flex-col items-center gap-y-10 w-full max-w-[1140px] mx-auto py-10 px-[66px] rounded-[10px] bg-white dark:bg-secondary-dark-main'>
-            <div className='flex items-center justify-center gap-x-[10px] py-4 px-[59px] w-full max-w-[379px] rounded-[10px] bg-letter-4 dark:bg-secondary-dark-stroke bg-opacity-[0.08]'>
-               <Heading className='font-bold text-[25px] text-letter-2'>
+         <div className='flex flex-col items-center gap-y-10 md:gap-y-5 w-full max-w-[1140px] mx-auto py-10 md:py-[25px] px-[66px] md:px-5 rounded-[10px] bg-white dark:bg-secondary-dark-main'>
+            <div className='flex items-center justify-center gap-x-[10px] py-4 md:py-3 px-[59px] md:px-[21px] w-full max-w-[379px] md:max-w-[213px] rounded-[10px] bg-letter-4 dark:bg-secondary-dark-stroke bg-opacity-[0.08]'>
+               <Heading className='font-bold text-[25px] md:text-base text-letter-2'>
                   Start a Campaign
                </Heading>
-               <IconRocket />
+               <IconRocket className='md:w-[18px] md:h-[18px]' />
             </div>
             <div className='flex flex-col items-center gap-y-[25px] w-full'>
-               <div className='grid grid-cols-2 gap-x-[45px] w-full'>
+               <div className='grid grid-cols-2 md:grid-cols-1 gap-x-[45px] w-full md:gap-y-[15px]'>
                   <Field>
                      <Label htmlFor='title'>Campaign Title *</Label>
                      <Input name='title' placeholder='Write a title' />
@@ -85,14 +85,14 @@ const CampaignCreate = () => {
                   <Textarea name='story' placeholder='Write your story......' />
                </Field>
             </div>
-            <div className='flex items-center gap-x-5 w-full py-10 px-[45px] rounded-[10px] bg-secondary-light-20%'>
-               <IconMoneyBag />
-               <Heading className='font-bold text-[25px] !text-white'>
+            <div className='md:my-[5px] flex items-center gap-x-5 md:gap-x-[10px] w-full py-10 md:py-[19px] px-[45px] md:px-5 rounded-[10px] bg-secondary-light-20%'>
+               <IconMoneyBag className='w-[19px] h-5' />
+               <Heading className='font-bold md:font-semibold text-[25px] md:text-xs !text-white'>
                   You will get 90% of total raised
                </Heading>
             </div>
             <div className='flex flex-col items-center gap-y-[25px] w-full'>
-               <div className='grid grid-cols-2 gap-x-[45px] w-full'>
+               <div className='grid grid-cols-2 md:grid-cols-1 gap-x-[45px] w-full md:gap-y-[15px]'>
                   <Field>
                      <Label htmlFor='goal'>Goal *</Label>
                      <Input name='goal' placeholder='$0.00 USD' />
@@ -102,14 +102,14 @@ const CampaignCreate = () => {
                      <Input name='raised_amount' placeholder='$0.00 USD' />
                   </Field>
                </div>
-               <div className='grid grid-cols-2 gap-x-[45px] w-full'>
+               <div className='grid grid-cols-2 md:grid-cols-1 gap-x-[45px] w-full md:gap-y-[15px]'>
                   <Field>
                      <Label htmlFor='amount_prefilled'>Amount Prefilled</Label>
                      <Input
                         name='amount_prefilled'
                         placeholder='Amount Prefilled'
                      />
-                     <Description className='w-full max-w-[387px]'>
+                     <Description className='w-full max-w-[387px] md:text-xs'>
                         It will help fill amount box by click, place each amount
                         by comma, ex: 10,20,30,40
                      </Description>
@@ -117,12 +117,12 @@ const CampaignCreate = () => {
                   <Field>
                      <Label htmlFor='goal'>Video</Label>
                      <Input name='goal' placeholder='Video' />
-                     <Description className='w-full max-w-[387px]'>
+                     <Description className='w-full max-w-[387px] md:text-xs'>
                         Place Youtube or Vimeo Video URL
                      </Description>
                   </Field>
                </div>
-               <div className='grid grid-cols-2 gap-x-[45px] w-full'>
+               <div className='grid grid-cols-2 md:grid-cols-1 gap-x-[45px] w-full md:gap-y-[15px]'>
                   <Field>
                      <Label htmlFor='end_method'>Campaign End Method</Label>
                      <Dropdown defaultPlaceholder='Select one'>
@@ -158,7 +158,7 @@ const CampaignCreate = () => {
                      </Dropdown>
                   </Field>
                </div>
-               <div className='grid grid-cols-2 gap-x-[45px] w-full'>
+               <div className='grid grid-cols-2 md:grid-cols-1 gap-x-[45px] w-full md:gap-y-[15px]'>
                   <Field>
                      <Label htmlFor='start_date'>Start Date</Label>
                      <Input
@@ -177,7 +177,7 @@ const CampaignCreate = () => {
                   </Field>
                </div>
             </div>
-            <Button className='!py-[13px] !px-[39px] bg-primary-main text-white'>
+            <Button className='!py-[13px] md:!py-[15px] !px-[39px] md:!px-[50px] bg-primary-main text-white md:text-sm'>
                Submit new campaign
             </Button>
          </div>

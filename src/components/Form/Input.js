@@ -12,7 +12,7 @@ const Input = ({ type, name, className, icon, ...rest }) => {
             type={type}
             name={name}
             id={rest.id || name}
-            className={`relative w-full py-[15px] px-[25px] bg-transparent border border-input-b dark:border-secondary-dark-stroke rounded-[10px] leading-6 text-sm text-letter-1 dark:text-white placeholder:text-letter-4 dark:placeholder:text-letter-2 ${inputIconClass} ${
+            className={`relative w-full py-[15px] px-[25px] bg-transparent border border-input-b dark:border-secondary-dark-stroke rounded-[10px] leading-normal text-sm text-letter-1 dark:text-white placeholder:text-letter-4 dark:placeholder:text-letter-2 ${inputIconClass} ${
                className && className
             }`}
             {...rest}

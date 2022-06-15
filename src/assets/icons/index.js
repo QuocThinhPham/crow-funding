@@ -15,6 +15,7 @@ export { default as IconHalfStar } from './IconHalfStar';
 export { default as IconLight } from './IconLight';
 export { default as IconLock } from './IconLock';
 export { default as IconLogout } from './IconLogout';
+export { default as IconMenu } from './IconMenu';
 export { default as IconMoneyBag } from './IconMoneyBag';
 export { default as IconPayment } from './IconPayment';
 export { default as IconPaypal } from './IconPaypal';

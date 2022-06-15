@@ -9,15 +9,17 @@ import { ProfileUpdate } from 'module/profile';
 const Profile = () => {
    return (
       <Wrapper>
-         <div className='flex flex-col items-start py-[50px] px-[130px] w-full max-w-[1097px] mx-auto rounded-[10px] bg-white dark:bg-secondary-dark-main'>
-            <div className='w-full mb-[55px]'>
-               <Heading className='font-bold text-[25px] mb-[5px]'>
+         <div className='flex flex-col items-start py-[50px] md:py-5 px-[130px] md:px-[25px] w-full max-w-[1097px] mx-auto rounded-[10px] bg-white dark:bg-secondary-dark-main'>
+            <div className='w-full mb-[55px] md:mb-8'>
+               <Heading className='font-bold text-[25px] mb-[5px] md:text-lg'>
                   Account Information
                </Heading>
-               <Description>Update your account information</Description>
+               <Description className='!text-xs'>
+                  Update your account information
+               </Description>
             </div>
             <ProfileUpdate title='Personal Information'>
-               <div className='grid grid-cols-2 gap-x-[41px]'>
+               <div className='grid grid-cols-2 md:grid-cols-1 gap-x-[41px] md:gap-y-[15px]'>
                   <Field>
                      <Label htmlFor='firstName'>First Name</Label>
                      <Input name='firstName' placeholder='Mahfuzul Nabil' />
@@ -27,7 +29,7 @@ const Profile = () => {
                      <Input name='lastName' placeholder='Nabil' />
                   </Field>
                </div>
-               <div className='grid grid-cols-2 gap-x-[41px]'>
+               <div className='grid grid-cols-2 md:grid-cols-1 gap-x-[41px] md:gap-y-[15px]'>
                   <Field>
                      <Label htmlFor='DoB'>Date of Birth</Label>
                      <Input
@@ -41,7 +43,7 @@ const Profile = () => {
                      <Input type='tel' name='tel' placeholder='+123 456 7890' />
                   </Field>
                </div>
-               <Button className='mt-[5px] max-w-[190px] text-white bg-primary-main'>
+               <Button className='mt-[5px] max-w-[190px] text-white bg-primary-main md:px-[38px] md:text-sm md:max-w-max'>
                   Update
                </Button>
             </ProfileUpdate>
@@ -57,7 +59,7 @@ const Profile = () => {
                      }}
                   />
                </Field>
-               <div className='grid grid-cols-2 gap-x-[41px]'>
+               <div className='grid grid-cols-2 md:grid-cols-1 gap-x-[41px] md:gap-y-[15px]'>
                   <Field>
                      <Label htmlFor='password'>New Password</Label>
                      <Input
@@ -83,7 +85,7 @@ const Profile = () => {
                      />
                   </Field>
                </div>
-               <Button className='mt-[5px] max-w-[190px] text-white bg-primary-main'>
+               <Button className='mt-[5px] max-w-[190px] text-white bg-primary-main md:px-[38px] md:text-sm md:max-w-max'>
                   Update
                </Button>
             </ProfileUpdate>

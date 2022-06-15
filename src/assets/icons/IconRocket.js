@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IconRocket = () => {
+const IconRocket = ({ ...rest }) => {
    return (
       <svg
          width={28}
@@ -9,6 +9,7 @@ const IconRocket = () => {
          fill='none'
          xmlns='http://www.w3.org/2000/svg'
          xmlnsXlink='http://www.w3.org/1999/xlink'
+         {...rest}
       >
          <rect width={28} height={28} fill='url(#pattern0)' />
          <defs>

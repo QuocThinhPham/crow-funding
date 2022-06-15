@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IconMoneyBag = () => {
+const IconMoneyBag = ({ ...rest }) => {
    return (
       <svg
          width={40}
@@ -8,6 +8,7 @@ const IconMoneyBag = () => {
          viewBox='0 0 40 40'
          fill='none'
          xmlns='http://www.w3.org/2000/svg'
+         {...rest}
       >
          <g clipPath='url(#clip0_2235_14615)'>
             <path

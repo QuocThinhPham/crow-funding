@@ -31,9 +31,5 @@
 }
 
 .swiper .swiper-slide {
-   @apply max-w-[288px];
-}
-
-.grid-layout {
-   /* @apply; */
+   @apply max-w-[288px] md:max-w-[256px];
 }

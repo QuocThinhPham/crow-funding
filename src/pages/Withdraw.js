@@ -17,7 +17,7 @@ const Withdraw = () => {
                         <span className='p-7 md:p-[14px] text-letter-2 bg-[#DBFCD0] rounded-full backdrop-blur-[200px]'>
                            <IconUnion className='w-[32.4px] h-[32.4px]' />
                         </span>
-                        <span className='mt-[5px] font-primary font-medium text-sm md:text-xs leading-6 text-letter-2 dark:text-white'>
+                        <span className='mt-[5px] font-primary font-medium text-sm md:text-xs leading-normal text-letter-2 dark:text-white'>
                            Your Balance
                         </span>
                         <span className='font-primary font-bold text-[40px] md:text-[25px] leading-normal text-letter-1 dark:text-white'>
