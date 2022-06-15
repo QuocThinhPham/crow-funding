@@ -23,7 +23,7 @@ const Payment = () => {
                   <Description className='md:text-xs'>
                      Get paid directly via Paypal.
                   </Description>
-                  <Button className='mt-[25px] md:mt-5 w-full text-secondary-light-main bg-secondary-light-80% dark:bg-secondary-dark-80%'>
+                  <Button className='mt-[25px] md:mt-5 w-full text-secondary-light-main dark:text-white bg-secondary-light-80% dark:bg-secondary-dark-80%'>
                      Connect
                   </Button>
                </div>
@@ -34,7 +34,7 @@ const Payment = () => {
                   <Description className='md:text-xs'>
                      Get paid directly via Payoneer.
                   </Description>
-                  <Button className='mt-[25px] md:mt-5 w-full text-secondary-light-main bg-secondary-light-80% dark:bg-secondary-dark-80%'>
+                  <Button className='mt-[25px] md:mt-5 w-full text-secondary-light-main dark:text-white bg-secondary-light-80% dark:bg-secondary-dark-80%'>
                      Connect
                   </Button>
                </div>

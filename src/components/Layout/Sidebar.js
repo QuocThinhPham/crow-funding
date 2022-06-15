@@ -32,7 +32,7 @@ const Sidebar = () => {
                   }
                >
                   <nav.icon />
-                  <span>{nav.label}</span>
+                  <span className='min-lg:hidden'>{nav.label}</span>
                </NavLink>
             </li>
          ))
@@ -41,7 +41,7 @@ const Sidebar = () => {
    return (
       <div
          className={`w-full max-w-[76px] py-10 px-[14px] rounded-[20px] bg-white dark:bg-secondary-dark-main shadow-light dark:shadow-dark transition-transform lg:z-[9999] lg:h-full lg:px-6 lg:py-[26px] lg:fixed lg:top-0 lg:left-0 lg:max-w-none lg:max-h-screen lg:overflow-hidden lg:p-0 lg:rounded-none ${
-            showSidebar ? 'translate-x-0' : '-translate-x-full'
+            showSidebar ? 'lg:translate-x-0' : 'lg:-translate-x-full'
          }`}
       >
          <div className='w-full flex items-center justify-between min-lg:hidden'>
@@ -68,7 +68,7 @@ const Sidebar = () => {
                onClick={() => setDarkMode(!darkMode)}
             >
                {darkMode ? <IconLight /> : <IconDark />}
-               <span>Light/Dark</span>
+               <span className='min-lg:hidden'>Light/Dark</span>
             </li>
          </ul>
       </div>

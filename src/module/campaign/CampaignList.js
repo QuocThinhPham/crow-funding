@@ -15,7 +15,7 @@ const CampaignList = (props) => {
          </Heading>
          <CampaignItem />
          <CampaignItem />
-         <Button className='mx-auto md:py-[9px] md:px-[31.5px] md:text-sm text-secondary-light-main bg-secondary-light-80%'>
+         <Button className='mx-auto md:py-[9px] md:px-[31.5px] md:text-sm text-secondary-light-main dark:text-white bg-secondary-light-80% dark:bg-secondary-light-main dark:bg-opacity-30'>
             See more+
          </Button>
       </div>

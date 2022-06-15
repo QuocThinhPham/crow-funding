@@ -11,7 +11,7 @@ const TopBar = () => {
    return (
       <div className='flex items-center justify-between px-3 md:px-0'>
          <div
-            className='mobile-toggle text-letter-3'
+            className='mobile-toggle min-lg:hidden text-letter-3'
             onClick={() => dispatch(toggleSidebar())}
          >
             <IconMenu className='lg:w-8 md:w-6 lg:h-8 md:h-6' />
